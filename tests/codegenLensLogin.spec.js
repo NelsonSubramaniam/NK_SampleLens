@@ -11,4 +11,9 @@ test('Login', async ({ page }) => {
   await page.getByRole('button', { name: 'Login' }).click();
   await page.getByRole('button', { name: 'Yes' }).click();
   //code reviewed
+
+  //get the title
+  const title= await page.title()
+  console.log(title+"Lens Title")
+  
 });
